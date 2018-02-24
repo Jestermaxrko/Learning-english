@@ -45,7 +45,10 @@
 			</div>
 
 			<div id="answer_panel" style="display: none;">
-				<h2 id="answer"></h2>
+				<div id="answer">
+					<h2 id="rus_answer">A</h2>
+					<h2 id="bottom_h2"><a target="_blank" id="eng_answer">A</a></h2>
+				</div>
 				<input type="button" id="next_btn" onclick="nextWord()" value="Next">
 			</div>
 		</div>
@@ -98,6 +101,6 @@
   };
   firebase.initializeApp(config);
 	</script>
-	<script type="text/javascript" src="script.js"></script>
+	<script defer type="text/javascript" src="script.js"></script>
 </body>
 </html>

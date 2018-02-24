@@ -105,6 +105,20 @@ input{
 	cursor: pointer;
 }
 
+#eng_answer{
+	color: #466596;
+}
+
+#answer h2{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#answer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 #test_panel{
 	text-align: center;
 }

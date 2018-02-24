@@ -117,7 +117,7 @@ function nextWord(){
 
     document.getElementById("input_panel").style.display = "";
     document.getElementById("answer_panel").style.display = "none";
-    document.getElementById("answer").innerHTML= "";
+    //document.getElementById("answer").innerHTML= "";
     document.getElementById("word_input").focus();
     cur_word_index++;
     updateLine(cur_word_index+1);
@@ -153,7 +153,10 @@ function checkWord(word){
       document.getElementById("answer").className = "wrong";
     }
 
-    document.getElementById("answer").innerHTML =  current_words[cur_word_index].rus + "<br>" +current_words[cur_word_index].eng
+    document.getElementById("rus_answer").innerHTML =  current_words[cur_word_index].rus; 
+    document.getElementById("eng_answer").innerHTML =  current_words[cur_word_index].eng;
+    document.getElementById("eng_answer").href =  "https://translate.google.com.ua/#en/uk/"+current_words[cur_word_index].eng;
+
 
     document.getElementById("input_panel").style.display = "none";
     document.getElementById("answer_panel").style.display = "";
