@@ -144,6 +144,13 @@ function check(value,e){
 
 function checkWord(word){
 
+
+	if(current_words[cur_word_index].eng[current_words[cur_word_index].eng.length-1]==".")
+		current_words[cur_word_index].eng.length = current_words[cur_word_index].eng.length-1;
+
+	console.log(current_words[cur_word_index].eng);
+
+
     if(word.toLowerCase()==current_words[cur_word_index].eng.toLowerCase()){
       right_word_indexes.push(current_words[cur_word_index].id);
       document.getElementById("answer").className = "rigth";
@@ -594,6 +601,11 @@ function isInWrongDays(val,arr){
 }
 
 
+function hearWord(){
+	var msg = new SpeechSynthesisUtterance(current_words[cur_word_index].eng);
+	window.speechSynthesis.speak(msg);
+}
+
 
 
 /*function createDays(){
@@ -662,3 +674,5 @@ function getOwnDate(i){
     var newdate = year + "/" + month + "/" + day_s;
     return newdate;
 }
+
+

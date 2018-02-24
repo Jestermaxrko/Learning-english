@@ -91,6 +91,22 @@ input{
 	border-radius: 4px;
 }
 
+
+#hear_btn{
+	background-color: transparent;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	background: url("voice.png") no-repeat center;
+	width: 16px;
+	height: 16px;
+	
+}
+
+#hear_btn:hover{
+	opacity: 0.7;
+}
+
 .table_btn{
 	padding: 5px 10px;
 	width: 100%;
@@ -106,7 +122,13 @@ input{
 }
 
 #eng_answer{
+	text-decoration: none;
 	color: #466596;
+	margin-bottom: 5px;
+}
+
+#eng_answer:hover{
+	opacity: 0.7;
 }
 
 #answer h2{
@@ -117,6 +139,7 @@ input{
 #answer{
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding-bottom: 5px;
 }
 
 #test_panel{
